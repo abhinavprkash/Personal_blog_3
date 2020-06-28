@@ -1,0 +1,18 @@
+/*import */
+@import "nav_bar.css";
+
+/*Fonts and other tweaks for the structure*/
+.container__body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(30px, auto);
+  gap: 6px;
+  grid-template-areas:
+  "nav nav"
+  "top-post top-post"
+  "newsletter newsletter"
+  "post-1 post-2"
+  "post-3 post-4"
+  "post-5 post-4"
+  "ft ft";
+}

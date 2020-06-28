@@ -1,0 +1,119 @@
+/*nav bar */
+
+
+nav{
+  grid-area: nav;
+  background-color: rgb(33, 175, 245) ;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100px;
+  padding: 10px;;
+}
+
+/*  font-family: 'Piedra', cursive;
+*/
+
+.nav__title-flex{
+  display: flex;
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+  color: #000a0e;
+  width: 100%;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.nav__logo{
+font-family: 'Pacifico', cursive;
+  font-size: 1.0em;
+  text-align: center;
+  margin-left: 0;
+  font-weight: 300;
+}
+
+#flex-nav__menu{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  display: flex;
+  font-family: 'Pangolin', cursive;
+}
+
+nav ul{
+  list-style-type: none;
+  font-size: 1em;
+  margin: 0px;
+}
+
+li{
+  /*padding-left: 0px;
+  padding-right: 5px;
+  */
+  padding: 0 5px;
+}
+.nav__item{
+  list-style-type: none;
+  margin: 7px;
+}
+
+.nav__item>a{
+  color: black;
+  padding: 10px 20px;
+  border-radius: 1.5px;
+}
+
+.nav__item>a:hover{
+  color: rgb(209, 207, 187);
+  background-color: azure;
+  border: 1px solid azure;
+}
+
+.nav__item>a:active{
+  color: rgb(209, 207, 187);
+  background-color: azure;
+  border: 1px solid azure;
+}
+
+
+.nav__item> a:visited{
+  color: rgb(209, 207, 187)
+
+}
+
+/*Resopnsive design */
+@media (min-width: 600px) {
+  nav {
+    height: 60px;
+  }
+  .nav__title-flex{
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .nav__logo{
+    font-size: 1.0em;
+    text-align: center;
+    margin-left: 0;
+    font-weight: 300;
+  }
+
+  #flex-nav__menu{
+    flex-flow: row wrap;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+  }
+
+  nav ul{
+    list-style-type: none;
+    font-size: 1em;
+    margin: 0px;
+  }
+}
